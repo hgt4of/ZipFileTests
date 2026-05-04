@@ -1,0 +1,23 @@
+{
+  "books": [
+    {
+      "title": "Stalker",
+      "author": "Andrei Tarkovsky",
+      "year": 1979,
+      "tags": ["detective", "adventures", "drama"]
+    },
+    {
+      "title": "John Wick",
+      "author": "Keanu Reeves",
+      "year": 2014,
+      "tags": ["action", "adventures", "neo-noir"]
+    },
+    {
+      "title": "Fight Club",
+      "author": "Robert Paulson",
+      "year": 1999,
+      "tags": ["box", "fight", "action"]
+    }
+  ]
+
+}

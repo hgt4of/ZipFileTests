@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    testImplementation 'com.codeborne:pdf-test:1.9.0'
+    testImplementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    testImplementation 'org.apache.poi:poi:5.2.3'
+    testImplementation 'org.apache.poi:poi-ooxml:5.2.3'
+    testImplementation 'com.opencsv:opencsv:5.7.1'
+    testImplementation 'com.fasterxml.jackson.core:jackson-core:2.13.1'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.13.1'
+}
+
+test {
+    useJUnitPlatform()
+}

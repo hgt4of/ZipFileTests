@@ -1,4 +1,8 @@
+package models;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
+import models.Book;
+import models.Library;
 import org.junit.jupiter.api.Test;
 
 import java.io.InputStream;

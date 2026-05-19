@@ -1,8 +1,6 @@
 package models;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import models.Book;
-import models.Library;
 import org.junit.jupiter.api.Test;
 
 import java.io.InputStream;
@@ -13,15 +11,13 @@ import static org.junit.jupiter.api.Assertions.*;
 public class JsonParseTest {
 
     @Test
-    void parseBookJsonTest() throws Exception{
-        try (InputStream is = getClass().getClassLoader().getResourceAsStream
-                ("books.json")) {
+    void parseBookJsonTest() throws Exception {
+        try (InputStream is = getClass().getClassLoader().getResourceAsStream("books.json")) {
             ObjectMapper mapper = new ObjectMapper();
 
             Library library = mapper.readValue(is, Library.class);
 
             List<Book> books = library.getBooks();
-
             assertNotNull(books);
             assertEquals(3, books.size());
 
